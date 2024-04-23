@@ -1,0 +1,104 @@
+*
+{
+    margin: 0;
+}
+:root
+{
+    --text_color: whitesmoke;
+
+    --body_gradient1: #0b1925;
+    --body_gradient2: #111b32;
+    --body_gradient3: #1c031a;
+
+    --link_color: #c7afeb;
+    --link_color_hover: #ddd4ea;
+
+    --forms_style_background: #112749e1;
+    
+}
+
+body
+{
+    background-image: linear-gradient(95deg, var(--body_gradient1), var(--body_gradient2), var(--body_gradient3));
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    color: var(--text_color);
+}
+
+header{
+    height: 5em;
+}
+
+a{
+    color: var(--link_color);
+    font-size: large;
+}
+a:hover
+{
+    color: var(--link_color_hover);
+}
+
+.input_mod
+{
+    height: 2.5rem;
+
+    border-radius: 10px 0 0 0;
+    border-style: none;
+    
+}
+
+.email_confirm
+{
+    display: none;
+}
+
+.input_forms
+{
+    margin: auto;
+
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+}
+.forms_style
+{
+    margin: auto auto auto auto;
+
+    width: 45vw;
+    height: auto;
+
+    background-color: var(--forms_style_background);
+    backdrop-filter: blur(10px);
+
+    border-radius: 30px;
+}
+
+#signin_email_div
+{
+    display: none;
+    flex-direction: column;
+}
+#other_options
+{
+    /* margin: auto; */
+    padding: 10px 10px 10px 0px;
+
+    width: 100%;
+}
+
+#auth_submit
+{
+    align-self: center;
+    /* width: 5rem; */
+    height: 2rem;
+    
+}
+.signin_submit
+{
+    align-self: flex-end;
+    /* width: 5rem; */
+    height: 2rem;
+}
+
